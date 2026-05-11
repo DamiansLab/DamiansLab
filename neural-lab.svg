@@ -1,0 +1,56 @@
+<svg width="800" height="150" viewBox="0 0 800 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .node { fill: #F18E45; filter: drop-shadow(0 0 3px #F18E45); }
+    .line { stroke: #F18E45; stroke-width: 0.5; stroke-opacity: 0.2; stroke-dasharray: 400; stroke-dashoffset: 400; animation: flow 5s linear infinite; }
+    .pulse { animation: pulse-glow 3s ease-in-out infinite; }
+    .data-point { fill: #fff; filter: drop-shadow(0 0 2px #fff); animation: data-move 5s linear infinite; }
+
+    @keyframes flow {
+      0% { stroke-dashoffset: 400; stroke-opacity: 0.1; }
+      50% { stroke-opacity: 0.4; }
+      100% { stroke-dashoffset: 0; stroke-opacity: 0.1; }
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 0.3; r: 2; }
+      50% { opacity: 1; r: 4; }
+    }
+
+    @keyframes data-move {
+      0% { offset-distance: 0%; opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { offset-distance: 100%; opacity: 0; }
+    }
+
+    .path1 { offset-path: path('M100 75 Q 250 20 400 75'); }
+    .path2 { offset-path: path('M100 75 Q 250 130 400 75'); }
+    .path3 { offset-path: path('M400 75 Q 550 20 700 75'); }
+    .path4 { offset-path: path('M400 75 Q 550 130 700 75'); }
+    .path5 { offset-path: path('M100 75 L 700 75'); }
+  </style>
+
+  <!-- Connection Lines -->
+  <path d="M100 75 Q 250 20 400 75" class="line" />
+  <path d="M100 75 Q 250 130 400 75" class="line" />
+  <path d="M400 75 Q 550 20 700 75" class="line" />
+  <path d="M400 75 Q 550 130 700 75" class="line" />
+  <path d="M100 75 L 700 75" class="line" style="animation-delay: -2.5s;" />
+
+  <!-- Data Stream Points -->
+  <circle r="1.5" class="data-point path1" />
+  <circle r="1.5" class="data-point path2" style="animation-delay: -1s;" />
+  <circle r="1.5" class="data-point path3" style="animation-delay: -3s;" />
+  <circle r="1.5" class="data-point path4" style="animation-delay: -4s;" />
+  <circle r="1.5" class="data-point path5" style="animation-delay: -2s;" />
+
+  <!-- Nodes -->
+  <circle cx="100" cy="75" r="3" class="node pulse" />
+  <circle cx="400" cy="75" r="4" class="node pulse" style="animation-delay: -1.5s;" />
+  <circle cx="700" cy="75" r="3" class="node pulse" style="animation-delay: -0.5s;" />
+
+  <!-- Labels -->
+  <text x="100" y="95" fill="#F18E45" font-family="Arial" font-size="8" text-anchor="middle" opacity="0.6">LOCAL</text>
+  <text x="400" y="95" fill="#F18E45" font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold">USER</text>
+  <text x="700" y="95" fill="#F18E45" font-family="Arial" font-size="8" text-anchor="middle" opacity="0.6">CLOUD</text>
+</svg>

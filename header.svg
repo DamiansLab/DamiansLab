@@ -1,0 +1,20 @@
+<svg width="800" height="200" viewBox="0 0 800 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="200" fill="#0A0A0B"/>
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(700 50) rotate(135) scale(300)">
+      <stop stop-color="#F18E45" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#0A0A0B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass_border" x1="0" y1="0" x2="800" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0.1"/>
+      <stop offset="0.5" stop-color="white" stop-opacity="0.02"/>
+      <stop offset="1" stop-color="white" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="200" fill="url(#paint0_radial)"/>
+  <rect x="20" y="20" width="760" height="160" rx="15" fill="white" fill-opacity="0.03" stroke="url(#glass_border)" stroke-width="1"/>
+  <text x="50" y="90" fill="#F18E45" font-family="Arial, sans-serif" font-size="32" font-weight="bold">DamiansLab</text>
+  <text x="50" y="125" fill="#F1F1F1" font-family="Arial, sans-serif" font-size="16" letter-spacing="0.1em">DIGITAL EXPERIENCES • PHYSICAL INNOVATIONS</text>
+  <path d="M600 40L750 40M600 70L750 70M600 100L750 100" stroke="#F18E45" stroke-opacity="0.2" stroke-width="0.5"/>
+  <path d="M630 20V150M680 20V150M730 20V150" stroke="#F18E45" stroke-opacity="0.2" stroke-width="0.5"/>
+</svg>
