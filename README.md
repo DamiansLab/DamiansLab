@@ -42,14 +42,6 @@ I am a **Full-Stack Developer** and **3D Designer** based in Greece, specializin
 </p>
 
 
-### 🐍 Snake Contribution Graph
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DamiansLab/DamiansLab/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DamiansLab/DamiansLab/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/DamiansLab/DamiansLab/output/github-contribution-grid-snake.svg">
-  </picture>
-</p>
 
 
 > [!TIP]
