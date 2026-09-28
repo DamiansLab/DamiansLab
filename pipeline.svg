@@ -1,0 +1,72 @@
+<svg width="1200" height="230" viewBox="0 0 1200 230" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Workflow: Design, Build, Fabricate, Connect">
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .card { fill: #111113; stroke: #F18E45; stroke-opacity: .25; }
+    .wire { stroke: #F18E45; stroke-opacity: .35; stroke-dasharray: 4 6; animation: flow 1.2s linear infinite; }
+    .dot { fill: #F18E45; }
+    .ring { stroke: #F18E45; animation: ping 4s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes flow { to { stroke-dashoffset: -20; } }
+    @keyframes ping { 0% { transform: scale(1); opacity: .8; } 60%, 100% { transform: scale(2.4); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .wire, .ring { animation: none; } }
+  </style>
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#FFFFFF" fill-opacity=".05"/>
+    </pattern>
+    <clipPath id="panel"><rect x="1" y="1" width="1198" height="228" rx="18"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#panel)">
+    <rect width="1200" height="230" fill="#0A0A0B"/>
+    <rect width="1200" height="230" fill="url(#dots)"/>
+  </g>
+  <rect x="1" y="1" width="1198" height="228" rx="18" stroke="#FFFFFF" stroke-opacity=".08"/>
+
+  <!-- connectors -->
+  <path id="w1" class="wire" d="M290 115 H340"/>
+  <path id="w2" class="wire" d="M570 115 H620"/>
+  <path id="w3" class="wire" d="M850 115 H900"/>
+
+  <circle r="3" class="dot"><animateMotion dur="1.6s" repeatCount="indefinite" path="M290 115 H340"/></circle>
+  <circle r="3" class="dot"><animateMotion dur="1.6s" begin="-.5s" repeatCount="indefinite" path="M570 115 H620"/></circle>
+  <circle r="3" class="dot"><animateMotion dur="1.6s" begin="-1s" repeatCount="indefinite" path="M850 115 H900"/></circle>
+
+  <!-- stage 1 -->
+  <g>
+    <rect class="card" x="60" y="45" width="230" height="140" rx="14"/>
+    <text x="84" y="78" class="mono" font-size="12" fill="#F18E45" letter-spacing="2">01 · DESIGN</text>
+    <text x="84" y="116" class="sans" font-size="22" font-weight="700" fill="#F5F5F5">Model it</text>
+    <text x="84" y="146" class="sans" font-size="14" fill="#9A9A9A">Fusion 360 · CAD</text>
+    <text x="84" y="166" class="sans" font-size="14" fill="#9A9A9A">UI / UX sketches</text>
+  </g>
+
+  <!-- stage 2 -->
+  <g>
+    <rect class="card" x="340" y="45" width="230" height="140" rx="14"/>
+    <text x="364" y="78" class="mono" font-size="12" fill="#F18E45" letter-spacing="2">02 · BUILD</text>
+    <text x="364" y="116" class="sans" font-size="22" font-weight="700" fill="#F5F5F5">Code it</text>
+    <text x="364" y="146" class="sans" font-size="14" fill="#9A9A9A">TypeScript · Next.js</text>
+    <text x="364" y="166" class="sans" font-size="14" fill="#9A9A9A">AI agents · automation</text>
+  </g>
+
+  <!-- stage 3 -->
+  <g>
+    <rect class="card" x="620" y="45" width="230" height="140" rx="14"/>
+    <text x="644" y="78" class="mono" font-size="12" fill="#F18E45" letter-spacing="2">03 · FABRICATE</text>
+    <text x="644" y="116" class="sans" font-size="22" font-weight="700" fill="#F5F5F5">Print it</text>
+    <text x="644" y="146" class="sans" font-size="14" fill="#9A9A9A">3D printing</text>
+    <text x="644" y="166" class="sans" font-size="14" fill="#9A9A9A">Rapid prototyping</text>
+  </g>
+
+  <!-- stage 4 -->
+  <g>
+    <rect class="card" x="900" y="45" width="230" height="140" rx="14" style="stroke-opacity:.6"/>
+    <text x="924" y="78" class="mono" font-size="12" fill="#F18E45" letter-spacing="2">04 · CONNECT</text>
+    <text x="924" y="116" class="sans" font-size="22" font-weight="700" fill="#F5F5F5">Tap it</text>
+    <text x="924" y="146" class="sans" font-size="14" fill="#9A9A9A">NFC-enabled objects</text>
+    <text x="924" y="166" class="sans" font-size="14" fill="#9A9A9A">Phygital experiences</text>
+    <circle cx="1102" cy="74" r="5" class="dot"/>
+    <circle cx="1102" cy="74" r="5" class="ring"/>
+  </g>
+</svg>

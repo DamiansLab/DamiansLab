@@ -1,0 +1,31 @@
+<svg width="580" height="190" viewBox="0 0 580 190" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Phygital Smart Merch">
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  </style>
+  <defs>
+    <radialGradient id="g" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(560 0) scale(260 200)">
+      <stop stop-color="#F18E45" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#F18E45" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x=".75" y=".75" width="578.5" height="188.5" rx="16" fill="#0A0A0B"/>
+  <rect x=".75" y=".75" width="578.5" height="188.5" rx="16" fill="url(#g)" stroke="#FFFFFF" stroke-opacity=".1" stroke-width="1.5"/>
+  <rect x="0" y="30" width="3" height="40" rx="1.5" fill="#F18E45"/>
+  <g transform="translate(508 26)" stroke="#F18E45" stroke-width="1.8" stroke-linecap="round" fill="none">
+    <circle cx="6" cy="22" r="3.5" fill="#F18E45"/>
+    <path d="M14 13 A12 12 0 0 1 14 31" stroke-opacity=".9"/>
+    <path d="M21 6 A21 21 0 0 1 21 38" stroke-opacity=".6"/>
+    <path d="M28 -1 A30 30 0 0 1 28 45" stroke-opacity=".35"/>
+  </g>
+  <text x="28" y="44" class="mono" font-size="12" fill="#F18E45" letter-spacing="2">HARDWARE · NFC</text>
+  <text x="28" y="78" class="sans" font-size="26" font-weight="700" fill="#F5F5F5">Phygital Smart Merch</text>
+  <text x="28" y="110" class="sans" font-size="15" fill="#A8A8A8">Custom 3D-printed objects with embedded NFC —</text>
+  <text x="28" y="131" class="sans" font-size="15" fill="#A8A8A8">physical products that open digital experiences.</text>
+  <rect x="28" y="148" width="102" height="24" rx="12" fill="#F18E45" fill-opacity=".1" stroke="#F18E45" stroke-opacity=".35"/>
+  <text x="79.0" y="164" class="mono" font-size="12" fill="#F18E45" text-anchor="middle">Boo! Athens</text>
+  <rect x="138" y="148" width="146" height="24" rx="12" fill="#F18E45" fill-opacity=".1" stroke="#F18E45" stroke-opacity=".35"/>
+  <text x="211.0" y="164" class="mono" font-size="12" fill="#F18E45" text-anchor="middle">Antara Expedition</text>
+  <rect x="292" y="148" width="80" height="24" rx="12" fill="#F18E45" fill-opacity=".1" stroke="#F18E45" stroke-opacity=".35"/>
+  <text x="332.0" y="164" class="mono" font-size="12" fill="#F18E45" text-anchor="middle">3D print</text>
+</svg>
