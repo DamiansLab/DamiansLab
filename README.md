@@ -55,12 +55,12 @@
 ## 📡 Signals
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=DamiansLab&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0A0A0B&title_color=F18E45&icon_color=F18E45&text_color=C9C9C9&ring_color=F18E45" height="165" alt="GitHub stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DamiansLab&layout=compact&langs_count=6&hide_border=true&bg_color=0A0A0B&title_color=F18E45&text_color=C9C9C9" height="165" alt="Top languages" />
+  <img src="generated/stats.svg" width="49%" alt="GitHub stats" />
+  <img src="generated/languages.svg" width="49%" alt="Top languages" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=DamiansLab&theme=tokyonight&bg_color=0a0a0b&color=f18e45&line=f18e45&point=f1f1f1&area=true&hide_border=true" width="100%" alt="Contribution activity graph" />
+  <img src="generated/activity.svg" width="100%" alt="Contribution activity over the last 12 months" />
 </p>
 
 ---
