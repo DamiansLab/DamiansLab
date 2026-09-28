@@ -1,0 +1,29 @@
+<svg width="580" height="190" viewBox="0 0 580 190" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lab output">
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  </style>
+  <defs>
+    <radialGradient id="g" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(560 0) scale(260 200)">
+      <stop stop-color="#F18E45" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#F18E45" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x=".75" y=".75" width="578.5" height="188.5" rx="16" fill="#0A0A0B"/>
+  <rect x=".75" y=".75" width="578.5" height="188.5" rx="16" fill="url(#g)" stroke="#FFFFFF" stroke-opacity=".1" stroke-width="1.5"/>
+  <rect x="0" y="30" width="3" height="40" rx="1.5" fill="#F18E45"/>
+  <text x="28" y="44" class="mono" font-size="12" fill="#F18E45" letter-spacing="2">SYSTEM · STATS</text>
+  <text x="28" y="74" class="sans" font-size="22" font-weight="700" fill="#F5F5F5">Lab output</text>
+  <text x="28" y="112" class="sans" font-size="22" font-weight="700" fill="#F18E45">1,138</text>
+  <text x="28" y="128" class="mono" font-size="11" fill="#A8A8A8">Commits · 12 mo</text>
+  <text x="208" y="112" class="sans" font-size="22" font-weight="700" fill="#F18E45">1,143</text>
+  <text x="208" y="128" class="mono" font-size="11" fill="#A8A8A8">Contributions</text>
+  <text x="388" y="112" class="sans" font-size="22" font-weight="700" fill="#F18E45">0</text>
+  <text x="388" y="128" class="mono" font-size="11" fill="#A8A8A8">Pull requests</text>
+  <text x="28" y="158" class="sans" font-size="22" font-weight="700" fill="#F18E45">6</text>
+  <text x="28" y="174" class="mono" font-size="11" fill="#A8A8A8">Public repos</text>
+  <text x="208" y="158" class="sans" font-size="22" font-weight="700" fill="#F18E45">7</text>
+  <text x="208" y="174" class="mono" font-size="11" fill="#A8A8A8">Stars earned</text>
+  <text x="388" y="158" class="sans" font-size="22" font-weight="700" fill="#F18E45">1</text>
+  <text x="388" y="174" class="mono" font-size="11" fill="#A8A8A8">Followers</text>
+</svg>

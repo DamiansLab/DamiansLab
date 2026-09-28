@@ -1,0 +1,53 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Contribution activity over the last 12 months">
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .line { stroke-dasharray: 4000; stroke-dashoffset: 4000; animation: draw 3s ease-out forwards; }
+    .ring { animation: ping 2.4s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes ping { 0% { transform: scale(1); opacity: .8; } 70%, 100% { transform: scale(2.6); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .line { animation: none; stroke-dashoffset: 0; } .ring { animation: none; } }
+  </style>
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#FFFFFF" fill-opacity=".05"/>
+    </pattern>
+    <linearGradient id="fill" x1="0" y1="90" x2="0" y2="210" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F18E45" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#F18E45" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="panel"><rect x="1" y="1" width="1198" height="258" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#panel)">
+    <rect width="1200" height="260" fill="#0A0A0B"/>
+    <rect width="1200" height="260" fill="url(#dots)"/>
+  </g>
+  <rect x="1" y="1" width="1198" height="258" rx="18" stroke="#FFFFFF" stroke-opacity=".08"/>
+
+  <text x="60" y="44" class="mono" font-size="12" fill="#F18E45" letter-spacing="2">SYSTEM · ACTIVITY</text>
+  <text x="60" y="70" class="sans" font-size="20" font-weight="700" fill="#F5F5F5">Contributions, last 12 months</text>
+  <text x="1140" y="44" class="mono" font-size="11" fill="#A8A8A8" text-anchor="end">TOTAL · BEST WEEK</text>
+  <text x="1140" y="70" class="sans" font-size="20" font-weight="700" fill="#F18E45" text-anchor="end">1,143 <tspan fill="#6B6B6B">·</tspan> 112</text>
+
+  <path d="M60 180.0 H1140" stroke="#FFFFFF" stroke-opacity=".05"/>
+  <path d="M60 150.0 H1140" stroke="#FFFFFF" stroke-opacity=".05"/>
+  <path d="M60 120.0 H1140" stroke="#FFFFFF" stroke-opacity=".05"/>
+  <path d="M60 90.0 H1140" stroke="#FFFFFF" stroke-opacity=".05"/>
+  <path d="M60 210 H1140" stroke="#FFFFFF" stroke-opacity=".12"/>
+  <path d="M60.0 210.0 L80.8 210.0 L101.5 210.0 L122.3 210.0 L143.1 210.0 L163.8 210.0 L184.6 210.0 L205.4 210.0 L226.2 210.0 L246.9 210.0 L267.7 210.0 L288.5 210.0 L309.2 206.8 L330.0 207.9 L350.8 200.4 L371.5 188.6 L392.3 199.3 L413.1 196.1 L433.8 201.4 L454.6 197.1 L475.4 202.5 L496.2 210.0 L516.9 198.2 L537.7 144.6 L558.5 90.0 L579.2 168.2 L600.0 188.6 L620.8 158.6 L641.5 174.6 L662.3 173.6 L683.1 178.9 L703.8 180.0 L724.6 183.2 L745.4 206.8 L766.2 177.9 L786.9 182.1 L807.7 187.5 L828.5 196.1 L849.2 186.4 L870.0 172.5 L890.8 159.6 L911.5 210.0 L932.3 191.8 L953.1 153.2 L973.8 186.4 L994.6 200.4 L1015.4 210.0 L1036.2 98.6 L1056.9 158.6 L1077.7 192.9 L1098.5 173.6 L1119.2 90.0 L1140.0 202.5 L1140 210 L60 210 Z" fill="url(#fill)"/>
+  <path class="line" d="M60.0 210.0 L80.8 210.0 L101.5 210.0 L122.3 210.0 L143.1 210.0 L163.8 210.0 L184.6 210.0 L205.4 210.0 L226.2 210.0 L246.9 210.0 L267.7 210.0 L288.5 210.0 L309.2 206.8 L330.0 207.9 L350.8 200.4 L371.5 188.6 L392.3 199.3 L413.1 196.1 L433.8 201.4 L454.6 197.1 L475.4 202.5 L496.2 210.0 L516.9 198.2 L537.7 144.6 L558.5 90.0 L579.2 168.2 L600.0 188.6 L620.8 158.6 L641.5 174.6 L662.3 173.6 L683.1 178.9 L703.8 180.0 L724.6 183.2 L745.4 206.8 L766.2 177.9 L786.9 182.1 L807.7 187.5 L828.5 196.1 L849.2 186.4 L870.0 172.5 L890.8 159.6 L911.5 210.0 L932.3 191.8 L953.1 153.2 L973.8 186.4 L994.6 200.4 L1015.4 210.0 L1036.2 98.6 L1056.9 158.6 L1077.7 192.9 L1098.5 173.6 L1119.2 90.0 L1140.0 202.5" stroke="#F18E45" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="1140.0" cy="202.5" r="4" fill="#F18E45"/>
+  <circle class="ring" cx="1140.0" cy="202.5" r="4" stroke="#F18E45"/>
+  <text x="80.8" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">OCT</text>
+  <text x="163.8" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">NOV</text>
+  <text x="267.7" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">DEC</text>
+  <text x="350.8" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">JAN</text>
+  <text x="433.8" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">FEB</text>
+  <text x="516.9" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">MAR</text>
+  <text x="620.8" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">APR</text>
+  <text x="703.8" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">MAY</text>
+  <text x="807.7" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">JUN</text>
+  <text x="890.8" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">JUL</text>
+  <text x="973.8" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">AUG</text>
+  <text x="1077.7" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">SEP</text>
+</svg>
