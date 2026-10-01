@@ -14,9 +14,9 @@
   <rect x="0" y="30" width="3" height="40" rx="1.5" fill="#F18E45"/>
   <text x="28" y="44" class="mono" font-size="12" fill="#F18E45" letter-spacing="2">SYSTEM · STATS</text>
   <text x="28" y="74" class="sans" font-size="22" font-weight="700" fill="#F5F5F5">Lab output</text>
-  <text x="28" y="112" class="sans" font-size="22" font-weight="700" fill="#F18E45">1,147</text>
+  <text x="28" y="112" class="sans" font-size="22" font-weight="700" fill="#F18E45">1,154</text>
   <text x="28" y="128" class="mono" font-size="11" fill="#A8A8A8">Commits · 12 mo</text>
-  <text x="208" y="112" class="sans" font-size="22" font-weight="700" fill="#F18E45">1,152</text>
+  <text x="208" y="112" class="sans" font-size="22" font-weight="700" fill="#F18E45">1,159</text>
   <text x="208" y="128" class="mono" font-size="11" fill="#A8A8A8">Contributions</text>
   <text x="388" y="112" class="sans" font-size="22" font-weight="700" fill="#F18E45">0</text>
   <text x="388" y="128" class="mono" font-size="11" fill="#A8A8A8">Pull requests</text>
@@ -24,6 +24,6 @@
   <text x="28" y="174" class="mono" font-size="11" fill="#A8A8A8">Public repos</text>
   <text x="208" y="158" class="sans" font-size="22" font-weight="700" fill="#F18E45">7</text>
   <text x="208" y="174" class="mono" font-size="11" fill="#A8A8A8">Stars earned</text>
-  <text x="388" y="158" class="sans" font-size="22" font-weight="700" fill="#F18E45">1</text>
+  <text x="388" y="158" class="sans" font-size="22" font-weight="700" fill="#F18E45">2</text>
   <text x="388" y="174" class="mono" font-size="11" fill="#A8A8A8">Followers</text>
 </svg>
