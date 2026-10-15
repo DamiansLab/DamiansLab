@@ -16,11 +16,11 @@
   <text x="28" y="74" class="sans" font-size="22" font-weight="700" fill="#F5F5F5">Top languages</text>
   <clipPath id="bar"><rect x="28" y="94" width="524" height="10" rx="5"/></clipPath>
   <g clip-path="url(#bar)">
-    <rect x="28.0" y="94" width="518.6" height="10" fill="#555555"/>
-    <rect x="546.6" y="94" width="2.9" height="10" fill="#3572A5"/>
+    <rect x="28.0" y="94" width="518.5" height="10" fill="#555555"/>
+    <rect x="546.5" y="94" width="2.9" height="10" fill="#3572A5"/>
     <rect x="549.5" y="94" width="0.9" height="10" fill="#3178c6"/>
-    <rect x="550.4" y="94" width="0.9" height="10" fill="#f34b7d"/>
-    <rect x="551.3" y="94" width="0.5" height="10" fill="#f1e05a"/>
+    <rect x="550.3" y="94" width="0.9" height="10" fill="#f34b7d"/>
+    <rect x="551.2" y="94" width="0.5" height="10" fill="#f1e05a"/>
     <rect x="551.7" y="94" width="0.3" height="10" fill="#4F5D95"/>
   </g>
   <circle cx="33" cy="132" r="5" fill="#555555"/>
@@ -34,5 +34,5 @@
   <circle cx="213" cy="160" r="5" fill="#f1e05a"/>
   <text x="226" y="164" class="sans" font-size="14" fill="#F5F5F5">JavaScript <tspan class="mono" font-size="12" fill="#A8A8A8">0.1%</tspan></text>
   <circle cx="393" cy="160" r="5" fill="#4F5D95"/>
-  <text x="406" y="164" class="sans" font-size="14" fill="#F5F5F5">PHP <tspan class="mono" font-size="12" fill="#A8A8A8">0.0%</tspan></text>
+  <text x="406" y="164" class="sans" font-size="14" fill="#F5F5F5">PHP <tspan class="mono" font-size="12" fill="#A8A8A8">0.1%</tspan></text>
 </svg>
