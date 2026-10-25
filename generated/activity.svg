@@ -27,27 +27,27 @@
   <text x="60" y="44" class="mono" font-size="12" fill="#F18E45" letter-spacing="2">SYSTEM · ACTIVITY</text>
   <text x="60" y="70" class="sans" font-size="20" font-weight="700" fill="#F5F5F5">Contributions, last 12 months</text>
   <text x="1140" y="44" class="mono" font-size="11" fill="#A8A8A8" text-anchor="end">TOTAL · BEST WEEK</text>
-  <text x="1140" y="70" class="sans" font-size="20" font-weight="700" fill="#F18E45" text-anchor="end">1,432 <tspan fill="#6B6B6B">·</tspan> 148</text>
+  <text x="1140" y="70" class="sans" font-size="20" font-weight="700" fill="#F18E45" text-anchor="end">1,435 <tspan fill="#6B6B6B">·</tspan> 148</text>
 
   <path d="M60 180.0 H1140" stroke="#FFFFFF" stroke-opacity=".05"/>
   <path d="M60 150.0 H1140" stroke="#FFFFFF" stroke-opacity=".05"/>
   <path d="M60 120.0 H1140" stroke="#FFFFFF" stroke-opacity=".05"/>
   <path d="M60 90.0 H1140" stroke="#FFFFFF" stroke-opacity=".05"/>
   <path d="M60 210 H1140" stroke="#FFFFFF" stroke-opacity=".12"/>
-  <path d="M60.0 210.0 L80.8 210.0 L101.5 210.0 L122.3 210.0 L143.1 210.0 L163.8 210.0 L184.6 210.0 L205.4 210.0 L226.2 210.0 L246.9 207.6 L267.7 208.4 L288.5 202.7 L309.2 193.8 L330.0 201.9 L350.8 199.5 L371.5 203.5 L392.3 200.3 L413.1 204.3 L433.8 210.0 L454.6 201.1 L475.4 160.5 L496.2 119.2 L516.9 178.4 L537.7 193.8 L558.5 171.1 L579.2 183.2 L600.0 182.4 L620.8 186.5 L641.5 187.3 L662.3 189.7 L683.1 207.6 L703.8 185.7 L724.6 188.9 L745.4 193.0 L766.2 199.5 L786.9 192.2 L807.7 181.6 L828.5 171.9 L849.2 210.0 L870.0 196.2 L890.8 167.0 L911.5 192.2 L932.3 202.7 L953.1 210.0 L973.8 125.7 L994.6 171.1 L1015.4 197.0 L1036.2 180.0 L1056.9 154.1 L1077.7 188.9 L1098.5 176.8 L1119.2 111.9 L1140.0 90.0 L1140 210 L60 210 Z" fill="url(#fill)"/>
-  <path class="line" d="M60.0 210.0 L80.8 210.0 L101.5 210.0 L122.3 210.0 L143.1 210.0 L163.8 210.0 L184.6 210.0 L205.4 210.0 L226.2 210.0 L246.9 207.6 L267.7 208.4 L288.5 202.7 L309.2 193.8 L330.0 201.9 L350.8 199.5 L371.5 203.5 L392.3 200.3 L413.1 204.3 L433.8 210.0 L454.6 201.1 L475.4 160.5 L496.2 119.2 L516.9 178.4 L537.7 193.8 L558.5 171.1 L579.2 183.2 L600.0 182.4 L620.8 186.5 L641.5 187.3 L662.3 189.7 L683.1 207.6 L703.8 185.7 L724.6 188.9 L745.4 193.0 L766.2 199.5 L786.9 192.2 L807.7 181.6 L828.5 171.9 L849.2 210.0 L870.0 196.2 L890.8 167.0 L911.5 192.2 L932.3 202.7 L953.1 210.0 L973.8 125.7 L994.6 171.1 L1015.4 197.0 L1036.2 180.0 L1056.9 154.1 L1077.7 188.9 L1098.5 176.8 L1119.2 111.9 L1140.0 90.0" stroke="#F18E45" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="1140.0" cy="90.0" r="4" fill="#F18E45"/>
-  <circle class="ring" cx="1140.0" cy="90.0" r="4" stroke="#F18E45"/>
-  <text x="101.5" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">NOV</text>
-  <text x="205.4" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">DEC</text>
-  <text x="288.5" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">JAN</text>
-  <text x="371.5" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">FEB</text>
-  <text x="454.6" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">MAR</text>
-  <text x="558.5" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">APR</text>
-  <text x="641.5" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">MAY</text>
-  <text x="745.4" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">JUN</text>
-  <text x="828.5" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">JUL</text>
-  <text x="911.5" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">AUG</text>
-  <text x="1015.4" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">SEP</text>
-  <text x="1098.5" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">OCT</text>
+  <path d="M60.0 210.0 L80.8 210.0 L101.5 210.0 L122.3 210.0 L143.1 210.0 L163.8 210.0 L184.6 210.0 L205.4 210.0 L226.2 207.6 L246.9 208.4 L267.7 202.7 L288.5 193.8 L309.2 201.9 L330.0 199.5 L350.8 203.5 L371.5 200.3 L392.3 204.3 L413.1 210.0 L433.8 201.1 L454.6 160.5 L475.4 119.2 L496.2 178.4 L516.9 193.8 L537.7 171.1 L558.5 183.2 L579.2 182.4 L600.0 186.5 L620.8 187.3 L641.5 189.7 L662.3 207.6 L683.1 185.7 L703.8 188.9 L724.6 193.0 L745.4 199.5 L766.2 192.2 L786.9 181.6 L807.7 171.9 L828.5 210.0 L849.2 196.2 L870.0 167.0 L890.8 192.2 L911.5 202.7 L932.3 210.0 L953.1 125.7 L973.8 171.1 L994.6 197.0 L1015.4 180.0 L1036.2 154.1 L1056.9 188.9 L1077.7 176.8 L1098.5 111.9 L1119.2 90.0 L1140.0 207.6 L1140 210 L60 210 Z" fill="url(#fill)"/>
+  <path class="line" d="M60.0 210.0 L80.8 210.0 L101.5 210.0 L122.3 210.0 L143.1 210.0 L163.8 210.0 L184.6 210.0 L205.4 210.0 L226.2 207.6 L246.9 208.4 L267.7 202.7 L288.5 193.8 L309.2 201.9 L330.0 199.5 L350.8 203.5 L371.5 200.3 L392.3 204.3 L413.1 210.0 L433.8 201.1 L454.6 160.5 L475.4 119.2 L496.2 178.4 L516.9 193.8 L537.7 171.1 L558.5 183.2 L579.2 182.4 L600.0 186.5 L620.8 187.3 L641.5 189.7 L662.3 207.6 L683.1 185.7 L703.8 188.9 L724.6 193.0 L745.4 199.5 L766.2 192.2 L786.9 181.6 L807.7 171.9 L828.5 210.0 L849.2 196.2 L870.0 167.0 L890.8 192.2 L911.5 202.7 L932.3 210.0 L953.1 125.7 L973.8 171.1 L994.6 197.0 L1015.4 180.0 L1036.2 154.1 L1056.9 188.9 L1077.7 176.8 L1098.5 111.9 L1119.2 90.0 L1140.0 207.6" stroke="#F18E45" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="1140.0" cy="207.6" r="4" fill="#F18E45"/>
+  <circle class="ring" cx="1140.0" cy="207.6" r="4" stroke="#F18E45"/>
+  <text x="80.8" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">NOV</text>
+  <text x="184.6" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">DEC</text>
+  <text x="267.7" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">JAN</text>
+  <text x="350.8" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">FEB</text>
+  <text x="433.8" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">MAR</text>
+  <text x="537.7" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">APR</text>
+  <text x="620.8" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">MAY</text>
+  <text x="724.6" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">JUN</text>
+  <text x="807.7" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">JUL</text>
+  <text x="890.8" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">AUG</text>
+  <text x="994.6" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">SEP</text>
+  <text x="1077.7" y="234" class="mono" font-size="11" fill="#6B6B6B" text-anchor="middle">OCT</text>
 </svg>
