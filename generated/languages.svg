@@ -18,10 +18,10 @@
   <g clip-path="url(#bar)">
     <rect x="28.0" y="94" width="518.5" height="10" fill="#555555"/>
     <rect x="546.5" y="94" width="2.9" height="10" fill="#3572A5"/>
-    <rect x="549.5" y="94" width="0.9" height="10" fill="#3178c6"/>
+    <rect x="549.4" y="94" width="0.9" height="10" fill="#3178c6"/>
     <rect x="550.3" y="94" width="0.9" height="10" fill="#f34b7d"/>
     <rect x="551.2" y="94" width="0.5" height="10" fill="#f1e05a"/>
-    <rect x="551.7" y="94" width="0.3" height="10" fill="#4F5D95"/>
+    <rect x="551.6" y="94" width="0.4" height="10" fill="#4F5D95"/>
   </g>
   <circle cx="33" cy="132" r="5" fill="#555555"/>
   <text x="46" y="136" class="sans" font-size="14" fill="#F5F5F5">C <tspan class="mono" font-size="12" fill="#A8A8A8">99.0%</tspan></text>
