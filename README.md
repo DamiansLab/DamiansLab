@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="header.svg" width="100%" alt="DamiansLab — websites, custom software and 3D printing" />
+  <img src="assets/hud-header.svg" width="100%" alt="DamiansLab — websites, custom software and 3D printing" />
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
   <img src="https://komarev.com/ghpvc/?username=DamiansLab&style=flat-square&color=2FA3D4&label=profile+views" alt="Profile views" />
 </p>
 
-<p align="center"><img src="divider.svg" width="100%" alt="" /></p>
+<p align="center"><img src="assets/hud-divider.svg" width="100%" alt="" /></p>
 
 ### `▸ 01 // ABOUT THE LAB`
 
@@ -23,24 +23,24 @@
 - 💬 **Ask me about** — Next.js, Fusion 360, 3D printing, NFC merch, multi-agent workflows.
 - 📍 Based in **Greece**.
 
-<p align="center"><img src="divider.svg" width="100%" alt="" /></p>
+<p align="center"><img src="assets/hud-divider.svg" width="100%" alt="" /></p>
 
 ### `▸ 02 // FEATURED WORK`
 
 <p align="center">
-  <a href="https://github.com/DamiansLab/CLI-Agents-HQ"><img src="projects/cli-agents-hq.svg" width="49%" alt="CLI-Agents-HQ" /></a>
-  <a href="https://damianslab.gr"><img src="projects/phygital-merch.svg" width="49%" alt="Phygital Smart Merch" /></a>
+  <a href="https://github.com/DamiansLab/CLI-Agents-HQ"><img src="assets/prj-01-cli-agents-hq.svg" width="49%" alt="CLI-Agents-HQ" /></a>
+  <a href="https://damianslab.gr"><img src="assets/prj-02-phygital-merch.svg" width="49%" alt="Phygital Smart Merch" /></a>
 </p>
 
-<p align="center"><img src="divider.svg" width="100%" alt="" /></p>
+<p align="center"><img src="assets/hud-divider.svg" width="100%" alt="" /></p>
 
 ### `▸ 03 // FROM IDEA TO OBJECT`
 
 <p align="center">
-  <img src="pipeline.svg" width="100%" alt="Design → Build → Fabricate → Connect" />
+  <img src="assets/hud-pipeline.svg" width="100%" alt="Design → Build → Fabricate → Connect" />
 </p>
 
-<p align="center"><img src="divider.svg" width="100%" alt="" /></p>
+<p align="center"><img src="assets/hud-divider.svg" width="100%" alt="" /></p>
 
 ### `▸ 04 // TOOLBOX`
 
@@ -60,7 +60,7 @@
 **AI**<br/>
 <img src="https://img.shields.io/badge/Gemini_CLI-181D20?style=for-the-badge&logo=googlegemini&logoColor=8E75B2" alt="Gemini CLI" />
 
-<p align="center"><img src="divider.svg" width="100%" alt="" /></p>
+<p align="center"><img src="assets/hud-divider.svg" width="100%" alt="" /></p>
 
 ### `▸ 05 // SIGNALS`
 
@@ -73,7 +73,7 @@
   <img src="generated/activity.svg" width="100%" alt="Contribution activity over the last 12 months" />
 </p>
 
-<p align="center"><img src="divider.svg" width="100%" alt="" /></p>
+<p align="center"><img src="assets/hud-divider.svg" width="100%" alt="" /></p>
 
 <p align="center">
   <sub><code>END OF TRANSMISSION</code> · Built in the lab · Attica, Greece 🇬🇷 · <a href="https://damianslab.gr">damianslab.gr</a></sub>
