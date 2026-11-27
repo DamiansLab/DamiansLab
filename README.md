@@ -65,12 +65,12 @@
 ### `▸ 05 // SIGNALS`
 
 <p align="center">
-  <img src="generated/stats.svg" width="49%" alt="GitHub stats" />
-  <img src="generated/languages.svg" width="49%" alt="Top languages" />
+  <img src="signals/stats.svg" width="49%" alt="GitHub stats" />
+  <img src="signals/languages.svg" width="49%" alt="Top languages" />
 </p>
 
 <p align="center">
-  <img src="generated/activity.svg" width="100%" alt="Contribution activity over the last 12 months" />
+  <img src="signals/activity.svg" width="100%" alt="Contribution activity over the last 12 months" />
 </p>
 
 <p align="center"><img src="assets/hud-divider.svg" width="100%" alt="" /></p>

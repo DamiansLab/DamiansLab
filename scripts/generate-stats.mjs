@@ -3,7 +3,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const LOGIN = process.env.STATS_USER || process.env.GITHUB_REPOSITORY_OWNER || "DamiansLab";
-const OUT = "generated";
+const OUT = "signals";
 
 // Palette follows the dark theme of damianslab.gr.
 const C = { bg: "#181D20", line: "#2F3437", strong: "#636869", accent: "#2FA3D4", accent2: "#59B0DA", text: "#E5E9EA", muted: "#9FA3A5", dim: "#8B9092" };

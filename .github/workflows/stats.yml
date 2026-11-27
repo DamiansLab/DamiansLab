@@ -35,7 +35,7 @@ jobs:
 
       - name: Commit if changed
         run: |
-          git add generated
+          git add signals
           if git diff --cached --quiet; then
             echo "No changes"
             exit 0
