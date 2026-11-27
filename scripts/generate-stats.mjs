@@ -5,10 +5,23 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 const LOGIN = process.env.STATS_USER || process.env.GITHUB_REPOSITORY_OWNER || "DamiansLab";
 const OUT = "generated";
 
-const C = { bg: "#0A0A0B", accent: "#F18E45", text: "#F5F5F5", muted: "#A8A8A8", dim: "#6B6B6B" };
+// Palette follows the dark theme of damianslab.gr.
+const C = { bg: "#181D20", line: "#2F3437", strong: "#636869", accent: "#2FA3D4", accent2: "#59B0DA", text: "#E5E9EA", muted: "#9FA3A5", dim: "#8B9092" };
 const FONTS = `
-    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
-    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }`;
+    .mono { font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .sans { font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }`;
+const GRID = `    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0 H0 V32" stroke="${C.accent}" stroke-opacity=".05"/>
+    </pattern>`;
+
+// Sharp panel with blueprint grid and accent corner brackets, shared by all three SVGs.
+function frame(w, h) {
+  const l = 16, a = 0.75, c = w - 0.75, d = h - 0.75;
+  return `  <rect x=".5" y=".5" width="${w - 1}" height="${h - 1}" rx="2" fill="${C.bg}"/>
+  <rect x=".5" y=".5" width="${w - 1}" height="${h - 1}" rx="2" fill="url(#grid)"/>
+  <rect x=".5" y=".5" width="${w - 1}" height="${h - 1}" rx="2" stroke="${C.line}"/>
+  <path d="M${a} ${a + l} V${a} H${a + l} M${c - l} ${a} H${c} V${a + l} M${c} ${d - l} V${d} H${c - l} M${a + l} ${d} H${a} V${d - l}" stroke="${C.accent}" stroke-width="1.5"/>`;
+}
 
 const QUERY = `query($login: String!) {
   user(login: $login) {
@@ -54,21 +67,19 @@ async function fetchUser() {
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 const fmt = (n) => (n >= 10000 ? `${(n / 1000).toFixed(1).replace(/\.0$/, "")}k` : n.toLocaleString("en-US"));
 
-function card(width, height, label, title, body) {
+function card(width, height, label, id, title, body) {
   return `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${esc(title)}">
   <style>${FONTS}
   </style>
   <defs>
-    <radialGradient id="g" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(${width - 20} 0) scale(260 200)">
-      <stop stop-color="${C.accent}" stop-opacity=".16"/>
-      <stop offset="1" stop-color="${C.accent}" stop-opacity="0"/>
-    </radialGradient>
+${GRID}
   </defs>
-  <rect x=".75" y=".75" width="${width - 1.5}" height="${height - 1.5}" rx="16" fill="${C.bg}"/>
-  <rect x=".75" y=".75" width="${width - 1.5}" height="${height - 1.5}" rx="16" fill="url(#g)" stroke="#FFFFFF" stroke-opacity=".1" stroke-width="1.5"/>
-  <rect x="0" y="30" width="3" height="40" rx="1.5" fill="${C.accent}"/>
-  <text x="28" y="44" class="mono" font-size="12" fill="${C.accent}" letter-spacing="2">${esc(label)}</text>
-  <text x="28" y="74" class="sans" font-size="22" font-weight="700" fill="${C.text}">${esc(title)}</text>
+${frame(width, height)}
+  <text x="28" y="40" class="mono" font-size="12" fill="${C.accent}" letter-spacing="2">${esc(label)}</text>
+  <text x="${width - 28}" y="40" class="mono" font-size="11" fill="${C.strong}" letter-spacing="1" text-anchor="end">${esc(id)}</text>
+  <path d="M28 52.5 H${width - 28}" stroke="${C.line}"/>
+  <path d="M28 52.5 H68" stroke="${C.accent}" stroke-width="2"/>
+  <text x="28" y="80" class="sans" font-size="20" font-weight="700" fill="${C.text}">${esc(title)}</text>
 ${body}
 </svg>
 `;
@@ -88,12 +99,12 @@ function statsSvg(u) {
   const body = items
     .map(([label, value], i) => {
       const x = 28 + (i % 3) * 180;
-      const y = 112 + Math.floor(i / 3) * 46;
-      return `  <text x="${x}" y="${y}" class="sans" font-size="22" font-weight="700" fill="${C.accent}">${fmt(value)}</text>
+      const y = 116 + Math.floor(i / 3) * 44;
+      return `  <text x="${x}" y="${y}" class="sans" font-size="22" font-weight="700" fill="${C.accent2}">${fmt(value)}</text>
   <text x="${x}" y="${y + 16}" class="mono" font-size="11" fill="${C.muted}">${esc(label)}</text>`;
     })
     .join("\n");
-  return card(580, 190, "SYSTEM · STATS", "Lab output", body);
+  return card(580, 190, "SYS // STATS", "SIG-01", "Lab output", body);
 }
 
 function languagesSvg(u) {
@@ -110,10 +121,10 @@ function languagesSvg(u) {
   const sum = top.reduce((s, [, v]) => s + v.size, 0);
 
   if (!sum) {
-    return card(580, 190, "SYSTEM · LANGUAGES", "Top languages", `  <text x="28" y="120" class="sans" font-size="15" fill="${C.muted}">No public code yet.</text>`);
+    return card(580, 190, "SYS // LANGUAGES", "SIG-02", "Top languages", `  <text x="28" y="120" class="sans" font-size="15" fill="${C.muted}">No public code yet.</text>`);
   }
 
-  const barX = 28, barW = 524, barY = 94;
+  const barX = 28, barW = 524, barY = 98;
   let x = barX;
   const segs = top
     .map(([, v], i) => {
@@ -126,18 +137,18 @@ function languagesSvg(u) {
   const legend = top
     .map(([name, v], i) => {
       const lx = 28 + (i % 3) * 180;
-      const ly = 136 + Math.floor(i / 3) * 28;
+      const ly = 138 + Math.floor(i / 3) * 26;
       const pct = ((v.size / sum) * 100).toFixed(1);
-      return `  <circle cx="${lx + 5}" cy="${ly - 4}" r="5" fill="${v.color}"/>
+      return `  <rect x="${lx}" y="${ly - 10}" width="10" height="10" rx="1" fill="${v.color}"/>
   <text x="${lx + 18}" y="${ly}" class="sans" font-size="14" fill="${C.text}">${esc(name)} <tspan class="mono" font-size="12" fill="${C.muted}">${pct}%</tspan></text>`;
     })
     .join("\n");
-  const body = `  <clipPath id="bar"><rect x="${barX}" y="${barY}" width="${barW}" height="10" rx="5"/></clipPath>
+  const body = `  <clipPath id="bar"><rect x="${barX}" y="${barY}" width="${barW}" height="10" rx="1"/></clipPath>
   <g clip-path="url(#bar)">
 ${segs}
   </g>
 ${legend}`;
-  return card(580, 190, "SYSTEM · LANGUAGES", "Top languages", body);
+  return card(580, 190, "SYS // LANGUAGES", "SIG-02", "Top languages", body);
 }
 
 function activitySvg(u) {
@@ -167,7 +178,7 @@ function activitySvg(u) {
     lastMonth = m;
   });
   const grid = [0.25, 0.5, 0.75, 1]
-    .map((f) => `  <path d="M${x0} ${(y1 - f * (y1 - y0)).toFixed(1)} H${x1}" stroke="#FFFFFF" stroke-opacity=".05"/>`)
+    .map((f) => `  <path d="M${x0} ${(y1 - f * (y1 - y0)).toFixed(1)} H${x1}" stroke="${C.line}" stroke-dasharray="2 6"/>`)
     .join("\n");
   const [lx, ly] = pts[pts.length - 1] || [x1, y1];
 
@@ -180,31 +191,24 @@ function activitySvg(u) {
     @media (prefers-reduced-motion: reduce) { .line { animation: none; stroke-dashoffset: 0; } .ring { animation: none; } }
   </style>
   <defs>
-    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1" fill="#FFFFFF" fill-opacity=".05"/>
-    </pattern>
+${GRID}
     <linearGradient id="fill" x1="0" y1="${y0}" x2="0" y2="${y1}" gradientUnits="userSpaceOnUse">
       <stop stop-color="${C.accent}" stop-opacity=".35"/>
       <stop offset="1" stop-color="${C.accent}" stop-opacity="0"/>
     </linearGradient>
-    <clipPath id="panel"><rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="18"/></clipPath>
   </defs>
-  <g clip-path="url(#panel)">
-    <rect width="${W}" height="${H}" fill="${C.bg}"/>
-    <rect width="${W}" height="${H}" fill="url(#dots)"/>
-  </g>
-  <rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="18" stroke="#FFFFFF" stroke-opacity=".08"/>
+${frame(W, H)}
 
-  <text x="${x0}" y="44" class="mono" font-size="12" fill="${C.accent}" letter-spacing="2">SYSTEM · ACTIVITY</text>
+  <text x="${x0}" y="44" class="mono" font-size="12" fill="${C.accent}" letter-spacing="2">SYS // ACTIVITY</text>
   <text x="${x0}" y="70" class="sans" font-size="20" font-weight="700" fill="${C.text}">Contributions, last 12 months</text>
-  <text x="${x1}" y="44" class="mono" font-size="11" fill="${C.muted}" text-anchor="end">TOTAL · BEST WEEK</text>
-  <text x="${x1}" y="70" class="sans" font-size="20" font-weight="700" fill="${C.accent}" text-anchor="end">${fmt(cal.totalContributions)} <tspan fill="${C.dim}">·</tspan> ${fmt(best)}</text>
+  <text x="${x1}" y="44" class="mono" font-size="11" fill="${C.dim}" letter-spacing="1" text-anchor="end">SIG-03 · TOTAL / BEST WEEK</text>
+  <text x="${x1}" y="70" class="sans" font-size="20" font-weight="700" fill="${C.accent2}" text-anchor="end">${fmt(cal.totalContributions)} <tspan fill="${C.strong}">/</tspan> ${fmt(best)}</text>
 
 ${grid}
-  <path d="M${x0} ${y1} H${x1}" stroke="#FFFFFF" stroke-opacity=".12"/>
+  <path d="M${x0} ${y1} H${x1}" stroke="${C.strong}"/>
   <path d="${area}" fill="url(#fill)"/>
-  <path class="line" d="${line}" stroke="${C.accent}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="${lx.toFixed(1)}" cy="${ly.toFixed(1)}" r="4" fill="${C.accent}"/>
+  <path class="line" d="${line}" stroke="${C.accent}" stroke-width="2" stroke-linejoin="miter" stroke-linecap="square"/>
+  <circle cx="${lx.toFixed(1)}" cy="${ly.toFixed(1)}" r="4" fill="${C.accent2}"/>
   <circle class="ring" cx="${lx.toFixed(1)}" cy="${ly.toFixed(1)}" r="4" stroke="${C.accent}"/>
 ${months.join("\n")}
 </svg>
